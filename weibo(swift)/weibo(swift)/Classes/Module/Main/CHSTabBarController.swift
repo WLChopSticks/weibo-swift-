@@ -12,24 +12,39 @@ class CHSTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
+        setValue(CHSTabBarView(), forKey: "tabBar")
+//        setValue(CHSTabBar(), forKey: "tabBar")
+        //加载子控制器
+        addChildViewcontrollers()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func addChildViewcontrollers() {
+        
+        //更改主色调
+        tabBar.tintColor = UIColor.orangeColor()
+        
+        let homeVC = CHSHomeController()
+        addChildViewcontroller(homeVC, name: "首页", imageName: "tabbar_home")
+        
+        let messageVC = CHSMessageController()
+        addChildViewcontroller(messageVC, name: "消息", imageName: "tabbar_message_center")
+        
+        let discoveryVC = CHSDiscoveryController()
+        addChildViewcontroller(discoveryVC, name: "发现", imageName: "tabbar_discover")
+        
+        let profileVC = CHSProfileController()
+        addChildViewcontroller(profileVC, name: "个人", imageName: "tabbar_profile")
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //初始化每个子控制器
+    private func addChildViewcontroller(vc: UIViewController,name: String, imageName: String) {
+        vc.title = name
+        vc.tabBarItem.image = UIImage(named: imageName)
+        let navVC = CHSNavController(rootViewController : vc)
+        addChildViewController(navVC)
     }
-    */
 
 }
