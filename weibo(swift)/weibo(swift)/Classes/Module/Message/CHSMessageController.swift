@@ -13,6 +13,8 @@ class CHSMessageController: CHSBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guestView?.setInfoAndImage("关注一些人，回这里看看有什么惊喜", imageNmae: "visitordiscover_image_message")
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

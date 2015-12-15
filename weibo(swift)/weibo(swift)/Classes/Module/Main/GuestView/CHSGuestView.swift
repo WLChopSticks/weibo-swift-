@@ -8,24 +8,57 @@
 
 import UIKit
 
-class CHSGuestView: UIView {
+@objc protocol guestViewDelegate: NSObjectProtocol {
+    func registButtonClicking()
+    func logInButtonClicking()
+}
 
+class CHSGuestView: UIView {
+    
+
+    //设置协议属性
+    weak var delegate: guestViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.whiteColor()
         
+        addSubview(circleImage)
+        addSubview(cover)
         addSubview(logInBtn)
         addSubview(largeIcon)
-        addSubview(circleImage)
         addSubview(infoLabel)
         addSubview(registBtn)
         
-        logInBtn.frame = CGRectMake(100, 100, 100, 100)
-        
+        //监控两个按钮
+        registBtn.addTarget(self, action: "registClicking", forControlEvents: .TouchUpInside)
+        logInBtn.addTarget(self, action: "logInClicking", forControlEvents: .TouchUpInside)
     }
+    
+    @objc func registClicking() {
+        delegate?.registButtonClicking()
+    }
+    @objc func logInClicking() {
+        delegate?.logInButtonClicking()
+    }
+    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    //对外提供一个方法,让其传图片和文字进来
+    func setInfoAndImage(info: String, imageNmae: String?) {
+        infoLabel.text = info
+        if let imageStr = imageNmae {
+            largeIcon.hidden = true
+            circleImage.image = UIImage(named: imageStr)
+            bringSubviewToFront(circleImage)
+        }else {
+            //就是主页面
+            //开启动画
+            animationWithCircleImage()
+        }
     }
     
     override func layoutSubviews() {
@@ -35,26 +68,32 @@ class CHSGuestView: UIView {
         
         circleImage.center = largeIcon.center
         
-//        infoLabel.center.y = circleImage.frame.origin.y + circleImage.bounds.height + 20
-//        infoLabel.center.x = circleImage.center.x
-//        addConstraint(NSLayoutConstraint(item: infoLabel, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1, constant: 10))
-//        addConstraint(NSLayoutConstraint(item: infoLabel, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1, constant: -10))
-//        addConstraint(NSLayoutConstraint(item: infoLabel, attribute: .Height, relatedBy: .GreaterThanOrEqual, toItem: nil, attribute: .Height, multiplier: 1, constant: 30))
         infoLabel.frame = CGRectMake(20, circleImage.frame.origin.y + circleImage.bounds.height , UIScreen.mainScreen().bounds.width - 40, 60)
         
         let margin:CGFloat = 30
         let btnW = (UIScreen.mainScreen().bounds.width - margin * 2) / 2 - margin / 2
         logInBtn.frame = CGRectMake(margin, infoLabel.frame.origin.y + 80, btnW, 35)
         registBtn.frame = CGRectMake(margin + margin + btnW, infoLabel.frame.origin.y + 80, btnW, 35)
+        
+        cover.frame = CGRectMake(0, circleImage.center.y - circleImage.bounds.height * 0.6, UIScreen.mainScreen().bounds.width, circleImage.bounds.height)
 
-        
-        
-
-        
-        
+        backgroundColor = UIColor.init(white: 0.93, alpha: 1)
+ 
     }
     
     
+    
+    
+    //设置主页面的旋转动画
+    private func animationWithCircleImage() {
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
+        animation.duration = 10
+        animation.repeatCount = MAXFLOAT
+        animation.toValue = 2 * M_PI
+        animation.removedOnCompletion = false
+        
+        circleImage.layer.addAnimation(animation, forKey: nil)
+    }
 
     
     
@@ -99,6 +138,12 @@ class CHSGuestView: UIView {
         let registEdge = registImage?.resizableImageWithCapInsets(UIEdgeInsetsMake((registImage?.size.height)! * 0.5, (registImage?.size.width)! * 0.5, (registImage?.size.height)! * 0.5, (registImage?.size.width)! * 0.5))
         regist.setBackgroundImage(registEdge, forState: .Normal)
         return regist
+    }()
+    
+    lazy var cover: UIImageView = {
+        let coverImg = UIImageView()
+        coverImg.image = UIImage(named: "visitordiscover_feed_mask_smallicon")
+        return coverImg
     }()
     
 }
