@@ -21,6 +21,8 @@
 		219F422E1C1FE5D8005585F3 /* CHSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F422D1C1FE5D8005585F3 /* CHSTabBarView.swift */; };
 		219F42301C1FF0BC005585F3 /* CHSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F422F1C1FF0BC005585F3 /* CHSBaseViewController.swift */; };
 		219F42351C1FF777005585F3 /* CHSGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42341C1FF777005585F3 /* CHSGuestView.swift */; };
+		21F959AD1C217897001162F3 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F959AC1C217897001162F3 /* UILabel+Extention.swift */; };
+		21F959AF1C217A61001162F3 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F959AE1C217A61001162F3 /* UIButton+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		219F422D1C1FE5D8005585F3 /* CHSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSTabBarView.swift; sourceTree = "<group>"; };
 		219F422F1C1FF0BC005585F3 /* CHSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSBaseViewController.swift; sourceTree = "<group>"; };
 		219F42341C1FF777005585F3 /* CHSGuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSGuestView.swift; sourceTree = "<group>"; };
+		21F959AC1C217897001162F3 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
+		21F959AE1C217A61001162F3 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 		219F421D1C1FE158005585F3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				21F959AB1C217872001162F3 /* Extention */,
 				219F42291C1FE2BE005585F3 /* Common.swift */,
 			);
 			path = Tools;
@@ -232,6 +237,15 @@
 				219F42341C1FF777005585F3 /* CHSGuestView.swift */,
 			);
 			path = GuestView;
+			sourceTree = "<group>";
+		};
+		21F959AB1C217872001162F3 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				21F959AC1C217897001162F3 /* UILabel+Extention.swift */,
+				21F959AE1C217A61001162F3 /* UIButton+Extention.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,10 +383,12 @@
 				219F42241C1FE298005585F3 /* CHSMessageController.swift in Sources */,
 				219F42201C1FE19D005585F3 /* CHSTabBarController.swift in Sources */,
 				219F42301C1FF0BC005585F3 /* CHSBaseViewController.swift in Sources */,
+				21F959AD1C217897001162F3 /* UILabel+Extention.swift in Sources */,
 				219F42351C1FF777005585F3 /* CHSGuestView.swift in Sources */,
 				219F41E81C1FE0B2005585F3 /* AppDelegate.swift in Sources */,
 				219F422E1C1FE5D8005585F3 /* CHSTabBarView.swift in Sources */,
 				219F42261C1FE2A6005585F3 /* CHSDiscoveryController.swift in Sources */,
+				21F959AF1C217A61001162F3 /* UIButton+Extention.swift in Sources */,
 				219F42221C1FE28A005585F3 /* CHSHomeController.swift in Sources */,
 				219F422A1C1FE2BE005585F3 /* Common.swift in Sources */,
 			);
@@ -584,6 +600,7 @@
 				219F420E1C1FE0B3005585F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		219F420F1C1FE0B3005585F3 /* Build configuration list for PBXNativeTarget "weibo(swift)Tests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +609,7 @@
 				219F42111C1FE0B3005585F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		219F42121C1FE0B3005585F3 /* Build configuration list for PBXNativeTarget "weibo(swift)UITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +618,7 @@
 				219F42141C1FE0B3005585F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

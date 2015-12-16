@@ -111,35 +111,14 @@ class CHSGuestView: UIView {
         return circle
     }()
     
-    lazy var infoLabel: UILabel = {
-        let info = UILabel()
-        info.numberOfLines = 0
-        info.textColor = UIColor.darkGrayColor()
-        info.textAlignment = .Center
-        info.text = "我是一个大好人我是一个大好人我是一个大好人我是一个大好人"
-        return info
-    }()
     
-    lazy var logInBtn: UIButton = {
-        let logIn = UIButton()
-        logIn.setTitle("登陆", forState: .Normal)
-        logIn.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        let btnImage2 = UIImage(named: "common_button_white_disable")
-        let btnImage = btnImage2?.resizableImageWithCapInsets(UIEdgeInsetsMake((btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5, (btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5))
-        logIn.setBackgroundImage(btnImage, forState: .Normal)
-        return logIn
-    }()
+    lazy var infoLabel: UILabel = UILabel.init(title: "", color: UIColor.darkGrayColor(), fontSize: 16)
     
-    lazy var registBtn: UIButton = {
-        let regist = UIButton()
-        regist.setTitle("注册", forState: .Normal)
-        regist.setTitleColor(themeColor, forState: .Normal)
-        let registImage = UIImage(named: "common_button_white_disable")
-        let registEdge = registImage?.resizableImageWithCapInsets(UIEdgeInsetsMake((registImage?.size.height)! * 0.5, (registImage?.size.width)! * 0.5, (registImage?.size.height)! * 0.5, (registImage?.size.width)! * 0.5))
-        regist.setBackgroundImage(registEdge, forState: .Normal)
-        return regist
-    }()
     
+    lazy var logInBtn: UIButton = UIButton.init(title: "登陆", titleColor: UIColor.darkGrayColor(), backImage: "common_button_white_disable")
+    
+    lazy var registBtn: UIButton = UIButton.init(title: "注册", titleColor: themeColor, backImage: "common_button_white_disable")
+        
     lazy var cover: UIImageView = {
         let coverImg = UIImageView()
         coverImg.image = UIImage(named: "visitordiscover_feed_mask_smallicon")
