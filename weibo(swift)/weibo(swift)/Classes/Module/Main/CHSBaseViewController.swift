@@ -47,7 +47,12 @@ class CHSBaseViewController: UITableViewController, guestViewDelegate {
     }
     
     @objc func logInButtonClicking() {
-        print("登陆安妮被点击了")
+//        print("登陆安妮被点击了")
+        //在此modal一个登陆页面
+        let logInVC = CHSOauthController()
+        let navVC = CHSNavController(rootViewController: logInVC)
+        
+        presentViewController(navVC, animated: true, completion: nil)
     }
 
     
