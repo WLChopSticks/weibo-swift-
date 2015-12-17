@@ -9,6 +9,7 @@
 
 import UIKit
 import SnapKit
+import SDWebImage
 
 class CHSWelcomController: UIViewController {
 
@@ -28,12 +29,21 @@ class CHSWelcomController: UIViewController {
         view.addSubview(iconView)
         view.addSubview(nameLabel)
         
+        //获取头像和名字
+        let userAccount = CHSUserAccountViewModel()
+        
+        nameLabel.text = (userAccount.userAccount?.name)! + " 欢迎回来"
+        iconView.sd_setImageWithURL(userAccount.iconimage, placeholderImage: UIImage(named: "avatar_default_big"))
+
+
+        
         //设置约束
         iconView.layer.cornerRadius = 40
         iconView.layer.masksToBounds = true
         iconView.snp_makeConstraints { (make) -> Void in
             make.centerX.equalTo(view.snp_centerX)
             make.bottom.equalTo(view.snp_bottom).offset(-200)
+            make.size.equalTo(CGSizeMake(90, 90))
         }
         nameLabel.snp_makeConstraints { (make) -> Void in
             make.centerX.equalTo(iconView.snp_centerX)

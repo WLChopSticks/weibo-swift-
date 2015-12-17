@@ -22,7 +22,7 @@ class CHSUserAccount: NSObject, NSCoding {
     
     //添加用户名和图片属性
     var name: String?
-    var avatar_large: NSURL?
+    var avatar_large: String?
     
     //添加token过期时间
     var expires_date: NSDate?
@@ -47,7 +47,7 @@ class CHSUserAccount: NSObject, NSCoding {
         expires_in = aDecoder.decodeDoubleForKey("expires_in")
         uid = aDecoder.decodeObjectForKey("uid") as? String
         name = aDecoder.decodeObjectForKey("name") as? String
-        avatar_large = aDecoder.decodeObjectForKey("avatar_large") as? NSURL
+        avatar_large = aDecoder.decodeObjectForKey("avatar_large") as? String
         expires_date = aDecoder.decodeObjectForKey("expires_date") as? NSDate
   
     }

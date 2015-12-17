@@ -22,6 +22,11 @@ class CHSUserAccountViewModel: NSObject {
         return userAccount?.access_token != nil
     }
     
+    //获取用户头像
+    var iconimage: NSURL? {
+        return NSURL(string: userAccount?.avatar_large ?? "")
+    }
+    
     
     //获取access_token信息
     func loadAccessToken(code: String, finish: (isSuccess: Bool) -> ()) {
@@ -57,7 +62,7 @@ class CHSUserAccountViewModel: NSObject {
                 
                 //获取用户的名字和图片的URL,并赋值给模型
                 userAccount.name = result["name"] as? String
-                userAccount.avatar_large = result["avatar_large"] as? NSURL
+                userAccount.avatar_large = result["avatar_large"] as? String
                 //将信息保存到本地
                 userAccount.saveUserAccount()
                 finish(isSuccess: true)

@@ -118,7 +118,7 @@ extension CHSOauthController: UIWebViewDelegate {
             if isSuccess {
                 print("登陆成功")
                 self.returnMain()
-                NSNotificationCenter.defaultCenter().postNotificationName(changeRootViewController, object: nil)
+                NSNotificationCenter.defaultCenter().postNotificationName(changeRootViewController, object: "welcom")
             }else {
                 print("登陆失败")
             }

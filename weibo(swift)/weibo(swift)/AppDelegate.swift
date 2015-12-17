@@ -72,10 +72,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func registNotificationCenter() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "changeRootVC:", name: changeRootViewController, object: nil)
     }
+    //移除通知
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     
     func changeRootVC(notice: NSNotification) {
  
-        print(notice)
+        if notice.object != nil {
+            window?.rootViewController = CHSWelcomController()
+            return
+        }
         window?.rootViewController = CHSTabBarController()
         
     }
