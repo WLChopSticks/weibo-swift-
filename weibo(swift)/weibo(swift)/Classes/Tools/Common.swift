@@ -9,5 +9,11 @@
 import UIKit
 
 
+
+//app基本信息
+let client_id = "3754893333"
+let redirect_uri = "http://www.baidu.com"
+
 //定义系统的主色调
 let themeColor = UIColor.orangeColor()
+
