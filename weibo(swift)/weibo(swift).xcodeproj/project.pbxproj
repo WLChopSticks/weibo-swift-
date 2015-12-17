@@ -26,6 +26,8 @@
 		21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616291C225C13005B0AA2 /* UIButton+Extention.swift */; };
 		21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */; };
 		21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163B1C225C52005B0AA2 /* AppDelegate.swift */; };
+		21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */; };
+		21EF38A31C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */; };
 		40589182049FA04C3BB873DA /* Pods_weibo_swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		21A616291C225C13005B0AA2 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
 		21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
 		21A6163B1C225C52005B0AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccount.swift; sourceTree = "<group>"; };
+		21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccountViewModel.swift; sourceTree = "<group>"; };
 		4EFB0DDC54B41ADF5B1F8955 /* Pods-weibo(swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).release.xcconfig"; sourceTree = "<group>"; };
 		60F588DC10B12FE954B0A773 /* Pods-weibo(swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).debug.xcconfig"; sourceTree = "<group>"; };
 		F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weibo_swift_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +172,7 @@
 		21A616101C225C13005B0AA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 		21A6162B1C225C13005B0AA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 			files = (
 				21A616301C225C13005B0AA2 /* CHSTabBarController.swift in Sources */,
 				21A616321C225C13005B0AA2 /* CHSGuestView.swift in Sources */,
+				21EF38A31C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift in Sources */,
 				21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */,
 				21A616311C225C13005B0AA2 /* CHSTabBarView.swift in Sources */,
 				21A616341C225C13005B0AA2 /* CHSWelcomController.swift in Sources */,
@@ -490,6 +497,7 @@
 				21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */,
 				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
 				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,
+				21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */,
 				21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */,
 				21A6162F1C225C13005B0AA2 /* CHSNavController.swift in Sources */,
 				21A616351C225C13005B0AA2 /* CHSOauthController.swift in Sources */,

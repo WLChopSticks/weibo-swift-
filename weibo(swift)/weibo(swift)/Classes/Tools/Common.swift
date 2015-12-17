@@ -12,6 +12,7 @@ import UIKit
 
 //app基本信息
 let client_id = "3754893333"
+let client_secret = "d0f495da519ae1132e38b48084ce3fb9"
 let redirect_uri = "http://www.baidu.com"
 
 //定义系统的主色调
