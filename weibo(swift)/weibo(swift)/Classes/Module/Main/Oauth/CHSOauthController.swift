@@ -20,8 +20,8 @@ class CHSOauthController: UIViewController {
         view = web
         
         //添加左右两侧的返回和自动填写按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .Plain, target: self, action: "")
-        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "自动填写", style: .Plain, target: self, action: "")
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: .Plain, target: self, action: "returnMain")
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "自动填写", style: .Plain, target: self, action: "autoFill")
         
         
     }
