@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         setWordColor()
+        //注册通知
+        registNotificationCenter()
+        
+        //选择进入的控制器页面
+        defaultViewControllerToEnter()
+        
+        
         
         return true
     }
@@ -33,6 +40,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setWordColor() {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         UITabBar.appearance().tintColor = UIColor.orangeColor()
+    }
+    
+    //判断是否是新版本
+    func isNewVersion() -> Bool {
+        //获取当前软件版本
+        let info = NSBundle.mainBundle().infoDictionary
+        let ver = info!["CFBundleShortVersionString"] as! String
+        let version = Double(ver)
+        //获取缓存的版本号
+        let localVerson = NSUserDefaults.standardUserDefaults().doubleForKey("version")
+        
+        //存储当前版本号
+        NSUserDefaults.standardUserDefaults().setDouble(version!, forKey: "version")
+        print(version)
+        return version > localVerson
+    }
+    
+    //设置默认进入的控制器页面
+    func defaultViewControllerToEnter() {
+        if isNewVersion() {
+            //是新版本进入新特性页面
+            window?.rootViewController = CHSNewFeatureController()
+        }else {
+            //不是新版本进入欢迎页面
+            window?.rootViewController = CHSWelcomController()
+        }
+    }
+    
+    //注册通知
+    func registNotificationCenter() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "changeRootVC:", name: changeRootViewController, object: nil)
+    }
+    
+    func changeRootVC(notice: NSNotification) {
+ 
+        print(notice)
+        window?.rootViewController = CHSTabBarController()
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

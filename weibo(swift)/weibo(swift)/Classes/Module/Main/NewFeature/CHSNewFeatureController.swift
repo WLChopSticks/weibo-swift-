@@ -137,6 +137,7 @@ class newFeatureCell: UICollectionViewCell {
     //进入按钮的点击事件
     func enterBtnClicking() {
         print("进入按钮被点击了")
+        NSNotificationCenter.defaultCenter().postNotificationName(changeRootViewController, object: nil)
     }
     
     

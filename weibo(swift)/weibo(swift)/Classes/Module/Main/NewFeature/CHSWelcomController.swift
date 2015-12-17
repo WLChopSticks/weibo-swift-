@@ -60,6 +60,7 @@ class CHSWelcomController: UIViewController {
             
             }) { (_) -> Void in
                 print("ok")
+                NSNotificationCenter.defaultCenter().postNotificationName(changeRootViewController, object: nil)
         }
         
 

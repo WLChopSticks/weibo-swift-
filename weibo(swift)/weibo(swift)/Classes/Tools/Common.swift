@@ -18,3 +18,5 @@ let redirect_uri = "http://www.baidu.com"
 //定义系统的主色调
 let themeColor = UIColor.orangeColor()
 
+//定义切换控制器的通知名称
+let changeRootViewController = "changeRootViewController"
