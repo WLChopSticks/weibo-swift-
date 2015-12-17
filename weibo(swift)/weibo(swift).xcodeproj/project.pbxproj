@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		219F41E81C1FE0B2005585F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F41E71C1FE0B2005585F3 /* AppDelegate.swift */; };
 		219F41EF1C1FE0B2005585F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219F41EE1C1FE0B2005585F3 /* Assets.xcassets */; };
 		219F41FD1C1FE0B3005585F3 /* weibo_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F41FC1C1FE0B3005585F3 /* weibo_swift_Tests.swift */; };
 		219F42081C1FE0B3005585F3 /* weibo_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42071C1FE0B3005585F3 /* weibo_swift_UITests.swift */; };
-		219F42201C1FE19D005585F3 /* CHSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F421F1C1FE19D005585F3 /* CHSTabBarController.swift */; };
-		219F42221C1FE28A005585F3 /* CHSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42211C1FE28A005585F3 /* CHSHomeController.swift */; };
-		219F42241C1FE298005585F3 /* CHSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42231C1FE298005585F3 /* CHSMessageController.swift */; };
-		219F42261C1FE2A6005585F3 /* CHSDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42251C1FE2A6005585F3 /* CHSDiscoveryController.swift */; };
-		219F42281C1FE2B2005585F3 /* CHSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42271C1FE2B2005585F3 /* CHSProfileController.swift */; };
-		219F422A1C1FE2BE005585F3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42291C1FE2BE005585F3 /* Common.swift */; };
-		219F422C1C1FE2FF005585F3 /* CHSNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F422B1C1FE2FF005585F3 /* CHSNavController.swift */; };
-		219F422E1C1FE5D8005585F3 /* CHSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F422D1C1FE5D8005585F3 /* CHSTabBarView.swift */; };
-		219F42301C1FF0BC005585F3 /* CHSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F422F1C1FF0BC005585F3 /* CHSBaseViewController.swift */; };
-		219F42351C1FF777005585F3 /* CHSGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42341C1FF777005585F3 /* CHSGuestView.swift */; };
-		21F959AD1C217897001162F3 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F959AC1C217897001162F3 /* UILabel+Extention.swift */; };
-		21F959AF1C217A61001162F3 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F959AE1C217A61001162F3 /* UIButton+Extention.swift */; };
-		21F959B51C218062001162F3 /* CHSOauthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F959B41C218062001162F3 /* CHSOauthController.swift */; };
+		21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616131C225C13005B0AA2 /* CHSDiscoveryController.swift */; };
+		21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616151C225C13005B0AA2 /* CHSHomeController.swift */; };
+		21A6162E1C225C13005B0AA2 /* CHSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616171C225C13005B0AA2 /* CHSBaseViewController.swift */; };
+		21A6162F1C225C13005B0AA2 /* CHSNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616181C225C13005B0AA2 /* CHSNavController.swift */; };
+		21A616301C225C13005B0AA2 /* CHSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616191C225C13005B0AA2 /* CHSTabBarController.swift */; };
+		21A616311C225C13005B0AA2 /* CHSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6161A1C225C13005B0AA2 /* CHSTabBarView.swift */; };
+		21A616321C225C13005B0AA2 /* CHSGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6161C1C225C13005B0AA2 /* CHSGuestView.swift */; };
+		21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6161E1C225C13005B0AA2 /* CHSNewFeatureController.swift */; };
+		21A616341C225C13005B0AA2 /* CHSWelcomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6161F1C225C13005B0AA2 /* CHSWelcomController.swift */; };
+		21A616351C225C13005B0AA2 /* CHSOauthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616211C225C13005B0AA2 /* CHSOauthController.swift */; };
+		21A616361C225C13005B0AA2 /* CHSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616231C225C13005B0AA2 /* CHSMessageController.swift */; };
+		21A616371C225C13005B0AA2 /* CHSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616251C225C13005B0AA2 /* CHSProfileController.swift */; };
+		21A616381C225C13005B0AA2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616271C225C13005B0AA2 /* Common.swift */; };
+		21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A616291C225C13005B0AA2 /* UIButton+Extention.swift */; };
+		21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */; };
+		21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163B1C225C52005B0AA2 /* AppDelegate.swift */; };
+		40589182049FA04C3BB873DA /* Pods_weibo_swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		219F41E41C1FE0B2005585F3 /* weibo(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		219F41E71C1FE0B2005585F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219F41EE1C1FE0B2005585F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219F41F31C1FE0B2005585F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219F41F81C1FE0B2005585F3 /* weibo(swift)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weibo(swift)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,19 +56,25 @@
 		219F42031C1FE0B3005585F3 /* weibo(swift)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weibo(swift)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219F42071C1FE0B3005585F3 /* weibo_swift_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weibo_swift_UITests.swift; sourceTree = "<group>"; };
 		219F42091C1FE0B3005585F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		219F421F1C1FE19D005585F3 /* CHSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSTabBarController.swift; sourceTree = "<group>"; };
-		219F42211C1FE28A005585F3 /* CHSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSHomeController.swift; sourceTree = "<group>"; };
-		219F42231C1FE298005585F3 /* CHSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSMessageController.swift; sourceTree = "<group>"; };
-		219F42251C1FE2A6005585F3 /* CHSDiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSDiscoveryController.swift; sourceTree = "<group>"; };
-		219F42271C1FE2B2005585F3 /* CHSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSProfileController.swift; sourceTree = "<group>"; };
-		219F42291C1FE2BE005585F3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		219F422B1C1FE2FF005585F3 /* CHSNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSNavController.swift; sourceTree = "<group>"; };
-		219F422D1C1FE5D8005585F3 /* CHSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSTabBarView.swift; sourceTree = "<group>"; };
-		219F422F1C1FF0BC005585F3 /* CHSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSBaseViewController.swift; sourceTree = "<group>"; };
-		219F42341C1FF777005585F3 /* CHSGuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSGuestView.swift; sourceTree = "<group>"; };
-		21F959AC1C217897001162F3 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
-		21F959AE1C217A61001162F3 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
-		21F959B41C218062001162F3 /* CHSOauthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOauthController.swift; sourceTree = "<group>"; };
+		21A616131C225C13005B0AA2 /* CHSDiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSDiscoveryController.swift; sourceTree = "<group>"; };
+		21A616151C225C13005B0AA2 /* CHSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSHomeController.swift; sourceTree = "<group>"; };
+		21A616171C225C13005B0AA2 /* CHSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSBaseViewController.swift; sourceTree = "<group>"; };
+		21A616181C225C13005B0AA2 /* CHSNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSNavController.swift; sourceTree = "<group>"; };
+		21A616191C225C13005B0AA2 /* CHSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSTabBarController.swift; sourceTree = "<group>"; };
+		21A6161A1C225C13005B0AA2 /* CHSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSTabBarView.swift; sourceTree = "<group>"; };
+		21A6161C1C225C13005B0AA2 /* CHSGuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSGuestView.swift; sourceTree = "<group>"; };
+		21A6161E1C225C13005B0AA2 /* CHSNewFeatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSNewFeatureController.swift; sourceTree = "<group>"; };
+		21A6161F1C225C13005B0AA2 /* CHSWelcomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSWelcomController.swift; sourceTree = "<group>"; };
+		21A616211C225C13005B0AA2 /* CHSOauthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOauthController.swift; sourceTree = "<group>"; };
+		21A616231C225C13005B0AA2 /* CHSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSMessageController.swift; sourceTree = "<group>"; };
+		21A616251C225C13005B0AA2 /* CHSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSProfileController.swift; sourceTree = "<group>"; };
+		21A616271C225C13005B0AA2 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		21A616291C225C13005B0AA2 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
+		21A6163B1C225C52005B0AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EFB0DDC54B41ADF5B1F8955 /* Pods-weibo(swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).release.xcconfig"; sourceTree = "<group>"; };
+		60F588DC10B12FE954B0A773 /* Pods-weibo(swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).debug.xcconfig"; sourceTree = "<group>"; };
+		F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weibo_swift_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40589182049FA04C3BB873DA /* Pods_weibo_swift_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +110,8 @@
 				219F41FB1C1FE0B3005585F3 /* weibo(swift)Tests */,
 				219F42061C1FE0B3005585F3 /* weibo(swift)UITests */,
 				219F41E51C1FE0B2005585F3 /* Products */,
+				947721FF115ABB0829B3EE12 /* Pods */,
+				6FB17CE157EF0D64AA128CCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,8 +128,8 @@
 		219F41E61C1FE0B2005585F3 /* weibo(swift) */ = {
 			isa = PBXGroup;
 			children = (
-				219F42151C1FE158005585F3 /* Classes */,
-				219F41E71C1FE0B2005585F3 /* AppDelegate.swift */,
+				21A6160F1C225C13005B0AA2 /* Classes */,
+				21A6163B1C225C52005B0AA2 /* AppDelegate.swift */,
 				219F41EE1C1FE0B2005585F3 /* Assets.xcassets */,
 				219F41F31C1FE0B2005585F3 /* Info.plist */,
 			);
@@ -143,120 +154,147 @@
 			path = "weibo(swift)UITests";
 			sourceTree = "<group>";
 		};
-		219F42151C1FE158005585F3 /* Classes */ = {
+		21A6160F1C225C13005B0AA2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				219F42161C1FE158005585F3 /* Model */,
-				219F42171C1FE158005585F3 /* Module */,
-				219F421D1C1FE158005585F3 /* Tools */,
-				219F421E1C1FE158005585F3 /* ViewModel */,
+				21A616101C225C13005B0AA2 /* Model */,
+				21A616111C225C13005B0AA2 /* Module */,
+				21A616261C225C13005B0AA2 /* Tools */,
+				21A6162B1C225C13005B0AA2 /* ViewModel */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		219F42161C1FE158005585F3 /* Model */ = {
+		21A616101C225C13005B0AA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		219F42171C1FE158005585F3 /* Module */ = {
+		21A616111C225C13005B0AA2 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				219F421A1C1FE158005585F3 /* Main */,
-				219F42191C1FE158005585F3 /* Home */,
-				219F421B1C1FE158005585F3 /* Message */,
-				219F42181C1FE158005585F3 /* Discovery */,
-				219F421C1C1FE158005585F3 /* Profile */,
+				21A616161C225C13005B0AA2 /* Main */,
+				21A616141C225C13005B0AA2 /* Home */,
+				21A616121C225C13005B0AA2 /* Discovery */,
+				21A616221C225C13005B0AA2 /* Message */,
+				21A616241C225C13005B0AA2 /* Profile */,
 			);
 			path = Module;
 			sourceTree = "<group>";
 		};
-		219F42181C1FE158005585F3 /* Discovery */ = {
+		21A616121C225C13005B0AA2 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
-				219F42251C1FE2A6005585F3 /* CHSDiscoveryController.swift */,
+				21A616131C225C13005B0AA2 /* CHSDiscoveryController.swift */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
 		};
-		219F42191C1FE158005585F3 /* Home */ = {
+		21A616141C225C13005B0AA2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				219F42211C1FE28A005585F3 /* CHSHomeController.swift */,
+				21A616151C225C13005B0AA2 /* CHSHomeController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		219F421A1C1FE158005585F3 /* Main */ = {
+		21A616161C225C13005B0AA2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				21F959B01C218007001162F3 /* Oauth */,
-				219F42311C1FF1AA005585F3 /* GuestView */,
-				219F421F1C1FE19D005585F3 /* CHSTabBarController.swift */,
-				219F422D1C1FE5D8005585F3 /* CHSTabBarView.swift */,
-				219F422B1C1FE2FF005585F3 /* CHSNavController.swift */,
-				219F422F1C1FF0BC005585F3 /* CHSBaseViewController.swift */,
+				21A6161D1C225C13005B0AA2 /* NewFeature */,
+				21A616201C225C13005B0AA2 /* Oauth */,
+				21A6161B1C225C13005B0AA2 /* GuestView */,
+				21A616171C225C13005B0AA2 /* CHSBaseViewController.swift */,
+				21A616181C225C13005B0AA2 /* CHSNavController.swift */,
+				21A616191C225C13005B0AA2 /* CHSTabBarController.swift */,
+				21A6161A1C225C13005B0AA2 /* CHSTabBarView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		219F421B1C1FE158005585F3 /* Message */ = {
+		21A6161B1C225C13005B0AA2 /* GuestView */ = {
 			isa = PBXGroup;
 			children = (
-				219F42231C1FE298005585F3 /* CHSMessageController.swift */,
+				21A6161C1C225C13005B0AA2 /* CHSGuestView.swift */,
+			);
+			path = GuestView;
+			sourceTree = "<group>";
+		};
+		21A6161D1C225C13005B0AA2 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				21A6161E1C225C13005B0AA2 /* CHSNewFeatureController.swift */,
+				21A6161F1C225C13005B0AA2 /* CHSWelcomController.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		21A616201C225C13005B0AA2 /* Oauth */ = {
+			isa = PBXGroup;
+			children = (
+				21A616211C225C13005B0AA2 /* CHSOauthController.swift */,
+			);
+			path = Oauth;
+			sourceTree = "<group>";
+		};
+		21A616221C225C13005B0AA2 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				21A616231C225C13005B0AA2 /* CHSMessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
 		};
-		219F421C1C1FE158005585F3 /* Profile */ = {
+		21A616241C225C13005B0AA2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				219F42271C1FE2B2005585F3 /* CHSProfileController.swift */,
+				21A616251C225C13005B0AA2 /* CHSProfileController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		219F421D1C1FE158005585F3 /* Tools */ = {
+		21A616261C225C13005B0AA2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				21F959AB1C217872001162F3 /* Extention */,
-				219F42291C1FE2BE005585F3 /* Common.swift */,
+				21A616271C225C13005B0AA2 /* Common.swift */,
+				21A616281C225C13005B0AA2 /* Extention */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		219F421E1C1FE158005585F3 /* ViewModel */ = {
+		21A616281C225C13005B0AA2 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				21A616291C225C13005B0AA2 /* UIButton+Extention.swift */,
+				21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		21A6162B1C225C13005B0AA2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		219F42311C1FF1AA005585F3 /* GuestView */ = {
+		6FB17CE157EF0D64AA128CCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				219F42341C1FF777005585F3 /* CHSGuestView.swift */,
+				F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */,
 			);
-			path = GuestView;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		21F959AB1C217872001162F3 /* Extention */ = {
+		947721FF115ABB0829B3EE12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				21F959AC1C217897001162F3 /* UILabel+Extention.swift */,
-				21F959AE1C217A61001162F3 /* UIButton+Extention.swift */,
+				60F588DC10B12FE954B0A773 /* Pods-weibo(swift).debug.xcconfig */,
+				4EFB0DDC54B41ADF5B1F8955 /* Pods-weibo(swift).release.xcconfig */,
 			);
-			path = Extention;
-			sourceTree = "<group>";
-		};
-		21F959B01C218007001162F3 /* Oauth */ = {
-			isa = PBXGroup;
-			children = (
-				21F959B41C218062001162F3 /* CHSOauthController.swift */,
-			);
-			path = Oauth;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 219F420C1C1FE0B3005585F3 /* Build configuration list for PBXNativeTarget "weibo(swift)" */;
 			buildPhases = (
+				534520B11EE9D1C8A126CD4D /* Check Pods Manifest.lock */,
 				219F41E01C1FE0B2005585F3 /* Sources */,
 				219F41E11C1FE0B2005585F3 /* Frameworks */,
 				219F41E21C1FE0B2005585F3 /* Resources */,
+				42B355A826DDB3153C8E8FA5 /* Embed Pods Frameworks */,
+				84E984F3F9F92791ECE6C787 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,25 +425,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42B355A826DDB3153C8E8FA5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		534520B11EE9D1C8A126CD4D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84E984F3F9F92791ECE6C787 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		219F41E01C1FE0B2005585F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219F422C1C1FE2FF005585F3 /* CHSNavController.swift in Sources */,
-				219F42281C1FE2B2005585F3 /* CHSProfileController.swift in Sources */,
-				21F959B51C218062001162F3 /* CHSOauthController.swift in Sources */,
-				219F42241C1FE298005585F3 /* CHSMessageController.swift in Sources */,
-				219F42201C1FE19D005585F3 /* CHSTabBarController.swift in Sources */,
-				219F42301C1FF0BC005585F3 /* CHSBaseViewController.swift in Sources */,
-				21F959AD1C217897001162F3 /* UILabel+Extention.swift in Sources */,
-				219F42351C1FF777005585F3 /* CHSGuestView.swift in Sources */,
-				219F41E81C1FE0B2005585F3 /* AppDelegate.swift in Sources */,
-				219F422E1C1FE5D8005585F3 /* CHSTabBarView.swift in Sources */,
-				219F42261C1FE2A6005585F3 /* CHSDiscoveryController.swift in Sources */,
-				21F959AF1C217A61001162F3 /* UIButton+Extention.swift in Sources */,
-				219F42221C1FE28A005585F3 /* CHSHomeController.swift in Sources */,
-				219F422A1C1FE2BE005585F3 /* Common.swift in Sources */,
+				21A616301C225C13005B0AA2 /* CHSTabBarController.swift in Sources */,
+				21A616321C225C13005B0AA2 /* CHSGuestView.swift in Sources */,
+				21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */,
+				21A616311C225C13005B0AA2 /* CHSTabBarView.swift in Sources */,
+				21A616341C225C13005B0AA2 /* CHSWelcomController.swift in Sources */,
+				21A616381C225C13005B0AA2 /* Common.swift in Sources */,
+				21A6162E1C225C13005B0AA2 /* CHSBaseViewController.swift in Sources */,
+				21A616371C225C13005B0AA2 /* CHSProfileController.swift in Sources */,
+				21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */,
+				21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */,
+				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
+				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,
+				21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */,
+				21A6162F1C225C13005B0AA2 /* CHSNavController.swift in Sources */,
+				21A616351C225C13005B0AA2 /* CHSOauthController.swift in Sources */,
+				21A616361C225C13005B0AA2 /* CHSMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +612,7 @@
 		};
 		219F420D1C1FE0B3005585F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F588DC10B12FE954B0A773 /* Pods-weibo(swift).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -536,6 +628,7 @@
 		};
 		219F420E1C1FE0B3005585F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFB0DDC54B41ADF5B1F8955 /* Pods-weibo(swift).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
