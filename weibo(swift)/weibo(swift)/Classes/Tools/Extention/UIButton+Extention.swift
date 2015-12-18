@@ -12,14 +12,19 @@ import UIKit
 extension UIButton {
 
     //初始化按钮的方法,由文字和背景图片组成
-    convenience init(title: String, titleColor: UIColor, backImage: String) {
+    convenience init(title: String, titleColor: UIColor, backImage: String?, imageName: String? = nil) {
         self.init()
         
         setTitle(title, forState: .Normal)
         setTitleColor(titleColor, forState: .Normal)
-        let btnImage2 = UIImage(named: backImage)
-        let btnImage = btnImage2?.resizableImageWithCapInsets(UIEdgeInsetsMake((btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5, (btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5))
-        setBackgroundImage(btnImage, forState: .Normal)
+        if  let btnImageTem = backImage {
+            let btnImage2 = UIImage(named: btnImageTem)
+            let btnImage = btnImage2?.resizableImageWithCapInsets(UIEdgeInsetsMake((btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5, (btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5))
+            setBackgroundImage(btnImage, forState: .Normal)
+        }
+        if let image = imageName{
+            setImage(UIImage(named: image), forState: .Normal)
+        }
 
     }
     

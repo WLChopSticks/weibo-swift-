@@ -20,3 +20,10 @@ let themeColor = UIColor.orangeColor()
 
 //定义切换控制器的通知名称
 let changeRootViewController = "changeRootViewController"
+
+//定义屏幕的宽度
+let screenWidth: CGFloat = UIScreen.mainScreen().bounds.width
+let screenHeight: CGFloat = UIScreen.mainScreen().bounds.height
+
+//定义微博状态cell的间距
+let statusCellMargin:CGFloat = 10

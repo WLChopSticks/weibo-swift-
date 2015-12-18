@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2154C9EE1C242178000E3DFF /* CHSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9ED1C242178000E3DFF /* CHSStatus.swift */; };
+		2154C9F11C242E55000E3DFF /* CHSStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */; };
+		2154C9F31C242F06000E3DFF /* CHSOriginalStatusTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */; };
 		219F41EF1C1FE0B2005585F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219F41EE1C1FE0B2005585F3 /* Assets.xcassets */; };
 		219F41FD1C1FE0B3005585F3 /* weibo_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F41FC1C1FE0B3005585F3 /* weibo_swift_Tests.swift */; };
 		219F42081C1FE0B3005585F3 /* weibo_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42071C1FE0B3005585F3 /* weibo_swift_UITests.swift */; };
@@ -27,6 +30,8 @@
 		21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */; };
 		21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163B1C225C52005B0AA2 /* AppDelegate.swift */; };
 		21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */; };
+		21D99D3A1C244C570010F116 /* CHSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D391C244C570010F116 /* CHSUser.swift */; };
+		21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */; };
 		21EF38A31C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */; };
 		40589182049FA04C3BB873DA /* Pods_weibo_swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E4C1A729109E3AD9DFD421 /* Pods_weibo_swift_.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2154C9ED1C242178000E3DFF /* CHSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatus.swift; sourceTree = "<group>"; };
+		2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatusCell.swift; sourceTree = "<group>"; };
+		2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalStatusTopView.swift; sourceTree = "<group>"; };
 		219F41E41C1FE0B2005585F3 /* weibo(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219F41EE1C1FE0B2005585F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219F41F31C1FE0B2005585F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +83,8 @@
 		21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
 		21A6163B1C225C52005B0AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccount.swift; sourceTree = "<group>"; };
+		21D99D391C244C570010F116 /* CHSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUser.swift; sourceTree = "<group>"; };
+		21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalBottomView.swift; sourceTree = "<group>"; };
 		21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccountViewModel.swift; sourceTree = "<group>"; };
 		4EFB0DDC54B41ADF5B1F8955 /* Pods-weibo(swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).release.xcconfig"; sourceTree = "<group>"; };
 		60F588DC10B12FE954B0A773 /* Pods-weibo(swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weibo(swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-weibo(swift)/Pods-weibo(swift).debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2154C9EF1C242E2B000E3DFF /* StatusCellView */ = {
+			isa = PBXGroup;
+			children = (
+				2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */,
+				2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */,
+				21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */,
+			);
+			name = StatusCellView;
+			sourceTree = "<group>";
+		};
 		219F41DB1C1FE0B2005585F3 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */,
+				2154C9ED1C242178000E3DFF /* CHSStatus.swift */,
+				21D99D391C244C570010F116 /* CHSUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +222,7 @@
 		21A616141C225C13005B0AA2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2154C9EF1C242E2B000E3DFF /* StatusCellView */,
 				21A616151C225C13005B0AA2 /* CHSHomeController.swift */,
 			);
 			path = Home;
@@ -484,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2154C9F31C242F06000E3DFF /* CHSOriginalStatusTopView.swift in Sources */,
 				21A616301C225C13005B0AA2 /* CHSTabBarController.swift in Sources */,
 				21A616321C225C13005B0AA2 /* CHSGuestView.swift in Sources */,
 				21EF38A31C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift in Sources */,
@@ -492,16 +516,20 @@
 				21A616341C225C13005B0AA2 /* CHSWelcomController.swift in Sources */,
 				21A616381C225C13005B0AA2 /* Common.swift in Sources */,
 				21A6162E1C225C13005B0AA2 /* CHSBaseViewController.swift in Sources */,
+				2154C9F11C242E55000E3DFF /* CHSStatusCell.swift in Sources */,
 				21A616371C225C13005B0AA2 /* CHSProfileController.swift in Sources */,
 				21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */,
 				21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */,
 				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
 				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,
+				2154C9EE1C242178000E3DFF /* CHSStatus.swift in Sources */,
 				21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */,
+				21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */,
 				21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */,
 				21A6162F1C225C13005B0AA2 /* CHSNavController.swift in Sources */,
 				21A616351C225C13005B0AA2 /* CHSOauthController.swift in Sources */,
 				21A616361C225C13005B0AA2 /* CHSMessageController.swift in Sources */,
+				21D99D3A1C244C570010F116 /* CHSUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
