@@ -50,6 +50,12 @@ class CHSStatusCell: UITableViewCell {
             make.height.equalTo(30)
         }
         
+        //自身的行高,所有的控件都添加到contentView,约束也要设定contentView
+        contentView.snp_makeConstraints { (make) -> Void in
+            make.top.left.right.equalTo(self)
+            make.bottom.equalTo(originalBottomView.snp_bottom).offset(10)
+        }
+        
     }
     
     

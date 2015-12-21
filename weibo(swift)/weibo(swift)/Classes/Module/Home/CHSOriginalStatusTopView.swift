@@ -23,6 +23,8 @@ class CHSOriginalStatusTopView: UIView {
             mbrankImage.image = user?.mbrankImage
             verified_type_image.image = user?.verifiedImage
             context.text = status?.text
+            //为图片视图赋数据
+            picureView.imageURL = status?.imageURL
         }
     }
 
@@ -47,6 +49,9 @@ class CHSOriginalStatusTopView: UIView {
         addSubview(source)
         addSubview(context)
         addSubview(verified_type_image)
+        //添加图片视图
+        addSubview(picureView)
+        
         
         //自动布局
         //头像
@@ -84,9 +89,17 @@ class CHSOriginalStatusTopView: UIView {
             make.top.equalTo(iconView.snp_bottom).offset(statusCellMargin)
             make.left.equalTo(self.snp_left).offset(statusCellMargin)
         }
+        //图片视图
+        picureView.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(context.snp_bottom).offset(statusCellMargin)
+            make.left.equalTo(self.snp_left).offset(statusCellMargin)
+            make.height.equalTo(50)
+            make.width.equalTo(150)
+        }
+        
         //自身的约束
         self.snp_makeConstraints { (make) -> Void in
-            make.bottom.equalTo(context.snp_bottom).offset(statusCellMargin)
+            make.bottom.equalTo(picureView.snp_bottom).offset(statusCellMargin)
         }
 
         
@@ -102,5 +115,6 @@ class CHSOriginalStatusTopView: UIView {
     private lazy var source: UILabel = UILabel(title: "地球", color: UIColor.lightGrayColor(), fontSize: 12)
     private lazy var context: UILabel = UILabel(title: "这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈", color: UIColor.darkGrayColor(), fontSize: 14, margin: statusCellMargin)
     private lazy var verified_type_image: UIImageView = UIImageView(image: UIImage(named: "avatar_vip"))
+    private lazy var picureView: CHSPictureView = CHSPictureView()
 
 }

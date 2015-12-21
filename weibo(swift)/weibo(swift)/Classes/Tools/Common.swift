@@ -26,4 +26,12 @@ let screenWidth: CGFloat = UIScreen.mainScreen().bounds.width
 let screenHeight: CGFloat = UIScreen.mainScreen().bounds.height
 
 //定义微博状态cell的间距
-let statusCellMargin:CGFloat = 10
+let statusCellMargin: CGFloat = 10
+
+//随机颜色
+func randomColor() -> UIColor {
+    let r = CGFloat((random() % 256)) / 255.0
+    let g = CGFloat((random() % 256)) / 255.0
+    let b = CGFloat((random() % 256)) / 255.0
+    return UIColor(red: r, green: g, blue: b, alpha: 1)
+}

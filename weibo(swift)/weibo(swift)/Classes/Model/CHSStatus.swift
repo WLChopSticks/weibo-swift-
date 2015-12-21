@@ -22,6 +22,22 @@ class CHSStatus: NSObject {
     var thumbnail_pic: String?
     //用户信息模型
     var user: CHSUser?
+    //每个状态的配图
+    var pic_urls: [[String : String]]? {
+        didSet {
+            guard let urls = pic_urls else {
+                print("图片的URL为空")
+                return
+            }
+            imageURL = [NSURL]()
+            for URLDict in urls {
+                let URLString = URLDict["thumbnail_pic"]!
+                let url = NSURL(string: URLString)!
+                imageURL?.append(url)
+            }
+        }
+    }
+    var imageURL: [NSURL]?
     
     //字典转模型
     init(dict: [String: AnyObject]) {

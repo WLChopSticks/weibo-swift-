@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2153E9B21C25713500CB1010 /* CHSPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153E9B11C25713500CB1010 /* CHSPictureView.swift */; };
 		2154C9EE1C242178000E3DFF /* CHSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9ED1C242178000E3DFF /* CHSStatus.swift */; };
 		2154C9F11C242E55000E3DFF /* CHSStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */; };
 		2154C9F31C242F06000E3DFF /* CHSOriginalStatusTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2153E9B11C25713500CB1010 /* CHSPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSPictureView.swift; sourceTree = "<group>"; };
 		2154C9ED1C242178000E3DFF /* CHSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatus.swift; sourceTree = "<group>"; };
 		2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatusCell.swift; sourceTree = "<group>"; };
 		2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalStatusTopView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */,
 				2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */,
 				21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */,
+				2153E9B11C25713500CB1010 /* CHSPictureView.swift */,
 			);
 			name = StatusCellView;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				2154C9F11C242E55000E3DFF /* CHSStatusCell.swift in Sources */,
 				21A616371C225C13005B0AA2 /* CHSProfileController.swift in Sources */,
 				21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */,
+				2153E9B21C25713500CB1010 /* CHSPictureView.swift in Sources */,
 				21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */,
 				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
 				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,

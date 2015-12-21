@@ -29,7 +29,9 @@ class CHSHomeController: CHSBaseViewController {
         tableView.registerClass(CHSStatusCell.self, forCellReuseIdentifier: ID)
         
         //设置tableView的行高
-        tableView.rowHeight = 200
+        tableView.estimatedRowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.rowHeight = 200
         
     }
 
