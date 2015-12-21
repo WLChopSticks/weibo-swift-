@@ -68,12 +68,20 @@ class CHSOriginalStatusTopView: UIView {
         addSubview(verified_type_image)
         //添加图片视图
         addSubview(picureView)
+        addSubview(seperateView)
         
         
         //自动布局
+        //分割View
+        seperateView.backgroundColor = UIColor.darkGrayColor()
+        seperateView.snp_makeConstraints { (make) -> Void in
+            make.top.left.right.equalTo(self)
+            make.height.equalTo(10)
+        }
         //头像
         iconView.snp_makeConstraints { (make) -> Void in
-            make.top.left.equalTo(self).offset(statusCellMargin)
+            make.top.equalTo(seperateView.snp_bottom).offset(statusCellMargin)
+            make.left.equalTo(self.snp_left).offset(statusCellMargin)
             make.size.equalTo(CGSizeMake(iconViewWidth, iconViewWidth))
         }
         //认证用户
@@ -129,5 +137,6 @@ class CHSOriginalStatusTopView: UIView {
     private lazy var context: UILabel = UILabel(title: "这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈这个状态哈哈哈哈哈哈哈哈哈", color: UIColor.darkGrayColor(), fontSize: 14, margin: statusCellMargin)
     private lazy var verified_type_image: UIImageView = UIImageView(image: UIImage(named: "avatar_vip"))
     private lazy var picureView: CHSPictureView = CHSPictureView()
+    private lazy var seperateView: UIView = UIView()
 
 }

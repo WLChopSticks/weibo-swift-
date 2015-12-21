@@ -98,7 +98,6 @@ class CHSHomeController: CHSBaseViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(ID, forIndexPath: indexPath) as! CHSStatusCell
 
         //给cell赋值
-        print(statuses[indexPath.row].retweeted_status)
         cell.status = statuses[indexPath.row]
 
         return cell
