@@ -8,10 +8,12 @@
 
 import UIKit
 import SDWebImage
+import SnapKit
 
 class CHSOriginalStatusTopView: UIView {
     
     let iconViewWidth: CGFloat = 35
+    var bottomConstraint: Constraint?
     
     //数据模型,拿到数据
     var status: CHSStatus? {
@@ -25,6 +27,21 @@ class CHSOriginalStatusTopView: UIView {
             context.text = status?.text
             //为图片视图赋数据
             picureView.imageURL = status?.imageURL
+            //有无配图时和评论栏的距离,先设置一个约束,再根据不同的情况更新约束
+            if picureView.imageURL?.count == 0 {
+                //无图时,约束与正文相关
+                self.bottomConstraint?.uninstall()
+                self.snp_updateConstraints(closure: { (make) -> Void in
+                    
+                    self.bottomConstraint = make.bottom.equalTo(context.snp_bottom).offset(statusCellMargin).constraint
+                })
+            } else {
+                //有图时约束与图片相关
+                self.bottomConstraint?.uninstall()
+                self.snp_updateConstraints(closure: { (make) -> Void in
+                    self.bottomConstraint = make.bottom.equalTo(picureView.snp_bottom).offset(statusCellMargin).constraint
+                })
+            }
         }
     }
 
@@ -93,17 +110,13 @@ class CHSOriginalStatusTopView: UIView {
         picureView.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(context.snp_bottom).offset(statusCellMargin)
             make.left.equalTo(self.snp_left).offset(statusCellMargin)
-            make.height.equalTo(50)
-            make.width.equalTo(150)
         }
         
         //自身的约束
-        self.snp_makeConstraints { (make) -> Void in
-            make.bottom.equalTo(picureView.snp_bottom).offset(statusCellMargin)
-        }
+        self.snp_makeConstraints(closure: { (make) -> Void in
+          self.bottomConstraint = make.bottom.equalTo(context.snp_bottom).offset(statusCellMargin).constraint
+        })
 
-        
-        
     }
     
     

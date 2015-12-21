@@ -45,7 +45,7 @@ class CHSStatusCell: UITableViewCell {
         
         //bottomView
         originalBottomView.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(originalTopView.snp_bottom).offset(statusCellMargin)
+            make.top.equalTo(originalTopView.snp_bottom)
             make.left.right.equalTo(self)
             make.height.equalTo(30)
         }

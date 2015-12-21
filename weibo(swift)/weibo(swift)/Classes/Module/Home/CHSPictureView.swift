@@ -42,12 +42,8 @@ class CHSPictureView: UICollectionView {
         registerClass(pictureViewCell.self, forCellWithReuseIdentifier: ID)
         //设置数据源
         self.dataSource = self
-        
-        
-        backgroundColor = UIColor.yellowColor()
-        
-        
-        
+        //设置背景颜色
+        backgroundColor = UIColor.whiteColor()
         //添加label
         addSubview(pictureCount)
         pictureCount.snp_makeConstraints { (make) -> Void in
@@ -122,7 +118,6 @@ class pictureViewCell: UICollectionViewCell {
     //获取图片的url,为图片赋值
     var imageURL: NSURL? {
         didSet {
-            print(imageURL)
             pictureCell.sd_setImageWithURL(imageURL)
         }
     }
