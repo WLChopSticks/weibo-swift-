@@ -103,7 +103,7 @@ extension CHSOauthController: UIWebViewDelegate {
             //获取到code号
             let code = query.substringFromIndex(recogStr.endIndex)
 
-            
+            print(code)
             loadAccessToken(code)
         }
   

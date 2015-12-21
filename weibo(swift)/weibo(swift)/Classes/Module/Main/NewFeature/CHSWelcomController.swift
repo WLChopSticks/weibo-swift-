@@ -32,7 +32,7 @@ class CHSWelcomController: UIViewController {
         //获取头像和名字
         let userAccount = CHSUserAccountViewModel()
         
-        nameLabel.text = (userAccount.userAccount?.name)! + " 欢迎回来"
+        nameLabel.text = (userAccount.userAccount?.name) ?? "" + " 欢迎回来"
         iconView.sd_setImageWithURL(userAccount.iconimage, placeholderImage: UIImage(named: "avatar_default_big"))
 
 

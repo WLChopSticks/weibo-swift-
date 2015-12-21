@@ -12,11 +12,11 @@ class CHSBaseViewController: UITableViewController, guestViewDelegate {
     
     //设置一个全局变量,让外界控制器通过调用它实现页面的变换
     var guestView: CHSGuestView?
-    
+    //在此判断是否进入访客视图,还是直接进入home界面
+    let userLogIn = CHSUserAccountViewModel().userIsLogIn
+
     
     override func loadView() {
-        //在此判断是否进入访客视图,还是直接进入home界面
-        let userLogIn = CHSUserAccountViewModel().userIsLogIn
         
         if userLogIn {
             //进入home页面

@@ -71,7 +71,7 @@ class CHSRetweetStatusView: UIView {
     
 
     //懒加载并初始化视图
-    lazy var retweetContext: UILabel = UILabel(title: "是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗是人吗", color: UIColor.darkGrayColor(), fontSize: 14, margin: statusCellMargin)
+    lazy var retweetContext: UILabel = UILabel(title: "是人吗", color: UIColor.darkGrayColor(), fontSize: 14, margin: statusCellMargin)
     lazy var pictureView: CHSPictureView = CHSPictureView()
 
 }

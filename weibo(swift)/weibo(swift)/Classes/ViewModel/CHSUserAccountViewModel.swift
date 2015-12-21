@@ -30,23 +30,24 @@ class CHSUserAccountViewModel: NSObject {
     
     //获取access_token信息
     func loadAccessToken(code: String, finish: (isSuccess: Bool) -> ()) {
+        
+        
         //获取access_token的URL
         let tockenURL = "https://api.weibo.com/oauth2/access_token"
         let parameter = ["client_id":client_id,"client_secret":client_secret,"grant_type":"authorization_code","code":code,"redirect_uri":redirect_uri]
-        let manager = AFHTTPSessionManager()
-        //增加格式
-        manager.responseSerializer.acceptableContentTypes?.insert("text/plain")
-        //POST请求
-        manager.POST(tockenURL, parameters: parameter, success: { (_, result) -> Void in
+        NetworkTool.sharedTool.requestJSONDict(.POST, urlString: tockenURL, parameters: parameter) { (dic, error) -> () in
             //成功获取access_token后进行字典转模型
-            let userAccount = CHSUserAccount(dic: result as! [String : AnyObject])
+            if error != nil {
+                print(error)
+                
+                return
+            }
+            let userAccount = CHSUserAccount(dic: dic!)
             //获取用户信息
             self.loadUserInformation(userAccount, finish: finish)
-            
-            }) { (_, error) -> Void in
-                print(error)
+
         }
-        
+
         
     }
     
@@ -57,19 +58,20 @@ class CHSUserAccountViewModel: NSObject {
         if let token = userAccount.access_token, uid = userAccount.uid {
             let parameter = ["access_token": token,"uid": uid]
             
-            let manager = AFHTTPSessionManager()
-            manager.GET(userInfoURL, parameters: parameter, success: { (_, result) -> Void in
-                
-                //获取用户的名字和图片的URL,并赋值给模型
-                userAccount.name = result["name"] as? String
-                userAccount.avatar_large = result["avatar_large"] as? String
-                //将信息保存到本地
-                userAccount.saveUserAccount()
-                finish(isSuccess: true)
-                
-                }, failure: { (_, error) -> Void in
-                    print(error)
+            
+        NetworkTool.sharedTool.requestJSONDict(.GET, urlString: userInfoURL, parameters: parameter, finish: { (dic, error) -> () in
+            if error != nil {
+                return
+            }
+            //获取用户的名字和图片的URL,并赋值给模型
+            userAccount.name = dic!["name"] as? String
+            userAccount.avatar_large = dic!["avatar_large"] as? String
+            //将信息保存到本地
+            userAccount.saveUserAccount()
+            finish(isSuccess: true)  
+            
             })
+            
         }
         
     }
