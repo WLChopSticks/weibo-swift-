@@ -31,6 +31,7 @@
 		21A6163A1C225C13005B0AA2 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */; };
 		21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163B1C225C52005B0AA2 /* AppDelegate.swift */; };
 		21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */; };
+		21AB6B031C27C01500EE52C8 /* CHSRetweetStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */; };
 		21D99D3A1C244C570010F116 /* CHSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D391C244C570010F116 /* CHSUser.swift */; };
 		21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */; };
 		21EF38A31C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */; };
@@ -85,6 +86,7 @@
 		21A6162A1C225C13005B0AA2 /* UILabel+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
 		21A6163B1C225C52005B0AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccount.swift; sourceTree = "<group>"; };
+		21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSRetweetStatusView.swift; sourceTree = "<group>"; };
 		21D99D391C244C570010F116 /* CHSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUser.swift; sourceTree = "<group>"; };
 		21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalBottomView.swift; sourceTree = "<group>"; };
 		21EF38A21C22E5CF0020C0B5 /* CHSUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccountViewModel.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */,
 				21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */,
 				2153E9B11C25713500CB1010 /* CHSPictureView.swift */,
+				21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */,
 			);
 			name = StatusCellView;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
 				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,
 				2154C9EE1C242178000E3DFF /* CHSStatus.swift in Sources */,
+				21AB6B031C27C01500EE52C8 /* CHSRetweetStatusView.swift in Sources */,
 				21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */,
 				21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */,
 				21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */,

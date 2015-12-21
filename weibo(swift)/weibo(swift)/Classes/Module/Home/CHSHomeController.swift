@@ -32,6 +32,8 @@ class CHSHomeController: CHSBaseViewController {
         tableView.estimatedRowHeight = 300
         tableView.rowHeight = UITableViewAutomaticDimension
 //        tableView.rowHeight = 200
+        //将tableView的分割线去掉
+        tableView.separatorStyle = .None
         
     }
 
@@ -96,6 +98,7 @@ class CHSHomeController: CHSBaseViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(ID, forIndexPath: indexPath) as! CHSStatusCell
 
         //给cell赋值
+        print(statuses[indexPath.row].retweeted_status)
         cell.status = statuses[indexPath.row]
 
         return cell

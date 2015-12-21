@@ -104,7 +104,6 @@ extension CHSPictureView: UICollectionViewDataSource {
        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ID, forIndexPath: indexPath) as! pictureViewCell
 //        cell.backgroundColor = randomColor()
         cell.imageURL = imageURL![indexPath.row]
-        print(imageURL![indexPath.row])
         
         return cell
     }

@@ -39,6 +39,9 @@ class CHSStatus: NSObject {
     }
     var imageURL: [NSURL]?
     
+    //转发微博的内容
+    var retweeted_status: CHSStatus?
+    
     //字典转模型
     init(dict: [String: AnyObject]) {
         super.init()
@@ -49,10 +52,16 @@ class CHSStatus: NSObject {
     override func setValue(value: AnyObject?, forKey key: String) {
         super.setValue(value, forKey: key)
         if key == "user" {
-            guard let dict = value as? [String: AnyObject] else {
+            guard let dict = value as? [String : AnyObject] else {
                 return
             }
             user = CHSUser(dict: dict)
+        }
+        if key == "retweeted_status" {
+            guard let dict = value as? [String : AnyObject] else {
+                return
+            }
+            retweeted_status = CHSStatus(dict: dict)
         }
     }
     
