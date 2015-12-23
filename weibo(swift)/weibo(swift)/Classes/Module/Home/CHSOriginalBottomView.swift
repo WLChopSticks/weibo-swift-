@@ -9,6 +9,13 @@
 import UIKit
 
 class CHSOriginalBottomView: UIView {
+    
+    //转发按钮的点击事件
+    func retweetBtnClicking() {
+        let vc = CHSTempController()
+        vc.hidesBottomBarWhenPushed = true
+        self.navController()?.pushViewController(vc, animated: true)
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +39,9 @@ class CHSOriginalBottomView: UIView {
         addSubview(seperate1)
         addSubview(seperate2)
         addSubview(seperateLine)
+        
+        //按钮添加点击事件
+        retweetBtn.addTarget(self, action: "retweetBtnClicking", forControlEvents: .TouchUpInside)
         
         //设置约束
         retweetBtn.snp_makeConstraints { (make) -> Void in

@@ -1,19 +1,26 @@
 //
-//  CHSNavController.swift
+//  CHSTempController.swift
 //  weibo(swift)
 //
-//  Created by 王 on 15/12/15.
+//  Created by 王 on 15/12/23.
 //  Copyright © 2015年 王. All rights reserved.
 //
 
 import UIKit
 
-class CHSNavController: CHSBaseNavController {
+class CHSTempController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.whiteColor()
+//        self.hidesBottomBarWhenPushed = true
         // Do any additional setup after loading the view.
+        
+        
+//        let btn = UIButton(title: "返回", titleColor: themeColor, backImage: nil, imageName:"navigationbar_back_withtext")
+////        let btn = UIButton(image: "navigationbar_back_withtext", imageHighlight: "", backImage: "", backImageHighlight: "")
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+
     }
 
     override func didReceiveMemoryWarning() {

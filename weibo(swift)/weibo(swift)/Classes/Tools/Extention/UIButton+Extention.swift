@@ -21,9 +21,11 @@ extension UIButton {
             let btnImage2 = UIImage(named: btnImageTem)
             let btnImage = btnImage2?.resizableImageWithCapInsets(UIEdgeInsetsMake((btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5, (btnImage2?.size.height)! * 0.5, (btnImage2?.size.width)! * 0.5))
             setBackgroundImage(btnImage, forState: .Normal)
+            sizeToFit()
         }
         if let image = imageName{
             setImage(UIImage(named: image), forState: .Normal)
+            sizeToFit()
         }
 
     }
