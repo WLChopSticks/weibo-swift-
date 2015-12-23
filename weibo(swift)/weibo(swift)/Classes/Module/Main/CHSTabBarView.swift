@@ -17,8 +17,8 @@ class CHSTabBarView: UITabBar {
         super.init(frame: frame)
       
         addSubview(composeBtn)
-        //为添加按钮添加点击事件
-        composeBtn.addTarget(self, action: "composeBtnClicking", forControlEvents: .TouchUpInside)
+//        //为添加按钮添加点击事件
+//        composeBtn.addTarget(self, action: "composeBtnClicking", forControlEvents: .TouchUpInside)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -50,9 +50,10 @@ class CHSTabBarView: UITabBar {
         }
     }
     
-    @objc private func composeBtnClicking() {
-        print("加号按钮被点击了")
-    }
+//    @objc private func composeBtnClicking() {
+//        print("加号按钮被点击了")
+//        
+//    }
     
     //初始化创作按钮
     lazy var composeBtn: UIButton = UIButton.init(image: "tabbar_compose_icon_add", imageHighlight: "tabbar_compose_icon_add_highlighted", backImage: "tabbar_compose_button", backImageHighlight: "tabbar_compose_button_highlighted")

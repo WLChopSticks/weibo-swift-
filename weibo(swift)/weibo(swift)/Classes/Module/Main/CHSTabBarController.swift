@@ -13,8 +13,9 @@ class CHSTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        setValue(CHSTabBarView(), forKey: "tabBar")
+        let tabbar = CHSTabBarView()
+        setValue(tabbar, forKey: "tabBar")
+        tabbar.composeBtn.addTarget(self, action: "composeBtnClicking", forControlEvents: .TouchUpInside)
 //        setValue(CHSTabBar(), forKey: "tabBar")
         //加载子控制器
         addChildViewcontrollers()
@@ -45,6 +46,13 @@ class CHSTabBarController: UITabBarController {
         vc.tabBarItem.image = UIImage(named: imageName)
         let navVC = CHSNavController(rootViewController : vc)
         addChildViewController(navVC)
+    }
+    
+    //加号按钮被点击
+    func composeBtnClicking() {
+        let vc = CHSComposeController()
+        let navVC = CHSNavController(rootViewController: vc)
+        presentViewController(navVC, animated: true, completion: nil)
     }
 
 }

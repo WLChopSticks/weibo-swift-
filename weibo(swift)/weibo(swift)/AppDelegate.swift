@@ -19,9 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //初始化窗口,将其设置为自定义的tabbar控制器
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let vc = CHSTabBarController()
-//        let welcom = CHSWelcomController()
-        window?.rootViewController = vc
+//        let vc = CHSTabBarController()
+//        
+//        
+////        let welcom = CHSComposeController()
+////        let navVC = CHSNavController(rootViewController: welcom)
+//        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
         
         setWordColor()
