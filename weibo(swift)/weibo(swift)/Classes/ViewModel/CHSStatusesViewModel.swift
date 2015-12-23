@@ -13,14 +13,19 @@ class CHSStatusesViewModel: NSObject {
     
     
     
-    class func loadHomeControllerData(finish: (status: [CHSStatus]) -> ()) {
+    class func loadHomeControllerData(since_id: Int64,max_id: Int64, finish: (status: [CHSStatus]) -> ()) {
         let statusURL = "https://api.weibo.com/2/statuses/friends_timeline.json"
         //先判断access_token不为空
         guard let token = CHSUserAccountViewModel().userAccount?.access_token else {
             SVProgressHUD.showErrorWithStatus("请重新登陆")
             return
         }
-        let parameter = ["access_token":token]
+        var parameter = ["access_token":token]
+        if since_id != 0 {
+            parameter["since_id"] = "\(since_id)"
+        } else if max_id != 0 {
+            parameter["max_id"] = "\(max_id - 1)"
+        }
         //        print(token)
         NetworkTool.sharedTool.requestJSONDict(.GET, urlString: statusURL, parameters: parameter) { (dic, error) -> () in
             //            print(result)

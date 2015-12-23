@@ -10,6 +10,8 @@
 
 import AFNetworking
 
+let dataErrorDomain = "com.baidu.data.error"
+
 enum HTTPMethod: String {
     case GET = "GET"
     case POST = "POST"
@@ -33,19 +35,33 @@ class NetworkTool: AFHTTPSessionManager {
         if method == HTTPMethod.POST {
             POST(urlString, parameters: parameters, success: { (_, result) -> Void in
 //                print(result)
-                let dic = result as! [String: AnyObject]
+                guard let dic = result as? [String: AnyObject] else {
+                    //设置出错信息
+                    let myError = NSError(domain: dataErrorDomain, code: -10000, userInfo: [NSLocalizedDescriptionKey : "数据不合法"])
+                    print(myError)
+                    finish(dic: nil, error: myError)
+                    
+                    return
+                }
                 finish(dic: dic, error: nil)
                 }) { (_, error) -> Void in
                     print(error)
             }
         } else {
             GET(urlString, parameters: parameters, success: { (_, result) -> Void in
-                let dic = result as! [String: AnyObject]
+                guard let dic = result as? [String: AnyObject] else {
+                    //设置出错信息
+                    let myError = NSError(domain: dataErrorDomain, code: -10000, userInfo: [NSLocalizedDescriptionKey : "数据不合法"])
+                    print(myError)
+                    finish(dic: nil, error: myError)
+                    
+                    return
+                }
                 finish(dic: dic, error: nil)
-                }, failure: { (_, error) -> Void in
+                }) { (_, error) -> Void in
                     print(error)
-                    finish(dic: nil, error: error)
-            })
+
+            }
         }
         
     

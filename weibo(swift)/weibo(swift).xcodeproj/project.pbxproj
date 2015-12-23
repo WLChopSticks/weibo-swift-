@@ -12,6 +12,7 @@
 		2154C9EE1C242178000E3DFF /* CHSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9ED1C242178000E3DFF /* CHSStatus.swift */; };
 		2154C9F11C242E55000E3DFF /* CHSStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */; };
 		2154C9F31C242F06000E3DFF /* CHSOriginalStatusTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */; };
+		2197487F1C2A6EA800EEB084 /* CHSRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2197487E1C2A6EA800EEB084 /* CHSRefreshViewController.swift */; };
 		219F41EF1C1FE0B2005585F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219F41EE1C1FE0B2005585F3 /* Assets.xcassets */; };
 		219F41FD1C1FE0B3005585F3 /* weibo_swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F41FC1C1FE0B3005585F3 /* weibo_swift_Tests.swift */; };
 		219F42081C1FE0B3005585F3 /* weibo_swift_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F42071C1FE0B3005585F3 /* weibo_swift_UITests.swift */; };
@@ -63,6 +64,7 @@
 		2154C9ED1C242178000E3DFF /* CHSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatus.swift; sourceTree = "<group>"; };
 		2154C9F01C242E55000E3DFF /* CHSStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSStatusCell.swift; sourceTree = "<group>"; };
 		2154C9F21C242F06000E3DFF /* CHSOriginalStatusTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalStatusTopView.swift; sourceTree = "<group>"; };
+		2197487E1C2A6EA800EEB084 /* CHSRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSRefreshViewController.swift; sourceTree = "<group>"; };
 		219F41E41C1FE0B2005585F3 /* weibo(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219F41EE1C1FE0B2005585F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219F41F31C1FE0B2005585F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */,
 				2153E9B11C25713500CB1010 /* CHSPictureView.swift */,
 				21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */,
+				2197487E1C2A6EA800EEB084 /* CHSRefreshViewController.swift */,
 			);
 			name = StatusCellView;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				21AB6B031C27C01500EE52C8 /* CHSRetweetStatusView.swift in Sources */,
 				21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */,
 				21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */,
+				2197487F1C2A6EA800EEB084 /* CHSRefreshViewController.swift in Sources */,
 				21A6162C1C225C13005B0AA2 /* CHSDiscoveryController.swift in Sources */,
 				21A6162F1C225C13005B0AA2 /* CHSNavController.swift in Sources */,
 				211C97E31C283904003D53D8 /* CHSStatusesViewModel.swift in Sources */,

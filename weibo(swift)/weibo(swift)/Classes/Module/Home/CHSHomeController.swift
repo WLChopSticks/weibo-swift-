@@ -38,12 +38,50 @@ class CHSHomeController: CHSBaseViewController {
         //将tableView的分割线去掉
         tableView.separatorStyle = .None
         
+        //添加系统的下拉刷新
+//        refreshControl = UIRefreshControl()
+//        refreshControl?.addTarget(self, action: "loadStatuses", forControlEvents: .ValueChanged)
+        //添加页面最后的加载更多视图
+        tableView.tableFooterView = indicatorView
+        
+        //添加刷新的View
+        tableView.addSubview(refreshView)
+        refreshView.addTarget(self, action: "loadStatuses", forControlEvents: .ValueChanged)
+        
     }
 
     func loadStatuses() {
+        //since_id和max_id是用来获取最新微博和加载更多微博的
+        var max_id: Int64 = 0
+        var since_id: Int64 = 0
+        if indicatorView.isAnimating() {
+            max_id = self.statuses.last?.id ?? 0
+        } else {
+            since_id = self.statuses.first?.id ?? 0
+        }
         
-        CHSStatusesViewModel.loadHomeControllerData { (status) -> () in
-            self.statuses = status
+        
+        
+        CHSStatusesViewModel.loadHomeControllerData(since_id, max_id: max_id) { (status) -> () in
+
+            if since_id != 0 {
+                self.statuses = status + self.statuses
+                //结束菊花刷新
+//                self.refreshControl?.endRefreshing()
+                self.refreshView.endRefresh()
+            } else if max_id != 0 {
+                
+                self.statuses = self.statuses + status
+                self.indicatorView.stopAnimating()
+                
+            } else {
+                
+                self.statuses = status
+            }
+
+            
+            
+            
             //刷新表视图
             self.tableView.reloadData()
         }
@@ -74,54 +112,18 @@ class CHSHomeController: CHSBaseViewController {
 
         //给cell赋值
         cell.status = statuses[indexPath.row]
+        
+        //加载最后cell的时候转动菊花
+        if indexPath.row == statuses.count - 1 {
+            indicatorView.startAnimating()
+            //加载状态
+            loadStatuses()
+        }
 
         return cell
     }
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    //懒加载并初始化视图
+    private lazy var refreshView: CHSRefreshViewController = CHSRefreshViewController()
+    private lazy var indicatorView: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
 }
