@@ -38,6 +38,7 @@
 		21A6163C1C225C52005B0AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163B1C225C52005B0AA2 /* AppDelegate.swift */; };
 		21A6163E1C22D464005B0AA2 /* CHSUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */; };
 		21AB6B031C27C01500EE52C8 /* CHSRetweetStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */; };
+		21C0DF031C327659003D56E9 /* CHSUploadPictureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C0DF021C327659003D56E9 /* CHSUploadPictureController.swift */; };
 		21D630051C27DDEF002315BB /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D630041C27DDEF002315BB /* NetworkTool.swift */; };
 		21D99D3A1C244C570010F116 /* CHSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D391C244C570010F116 /* CHSUser.swift */; };
 		21D99D3C1C2457190010F116 /* CHSOriginalBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */; };
@@ -100,6 +101,7 @@
 		21A6163B1C225C52005B0AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21A6163D1C22D464005B0AA2 /* CHSUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUserAccount.swift; sourceTree = "<group>"; };
 		21AB6B021C27C01400EE52C8 /* CHSRetweetStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSRetweetStatusView.swift; sourceTree = "<group>"; };
+		21C0DF021C327659003D56E9 /* CHSUploadPictureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUploadPictureController.swift; sourceTree = "<group>"; };
 		21D630041C27DDEF002315BB /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		21D99D391C244C570010F116 /* CHSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSUser.swift; sourceTree = "<group>"; };
 		21D99D3B1C2457190010F116 /* CHSOriginalBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHSOriginalBottomView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				21869E741C2AD60C00493665 /* CHSComposeController.swift */,
+				21C0DF021C327659003D56E9 /* CHSUploadPictureController.swift */,
 			);
 			path = Compose;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				21869E751C2AD60C00493665 /* CHSComposeController.swift in Sources */,
 				21A6162D1C225C13005B0AA2 /* CHSHomeController.swift in Sources */,
 				21A616331C225C13005B0AA2 /* CHSNewFeatureController.swift in Sources */,
+				21C0DF031C327659003D56E9 /* CHSUploadPictureController.swift in Sources */,
 				21A616391C225C13005B0AA2 /* UIButton+Extention.swift in Sources */,
 				21869E721C2ACE5400493665 /* CHSBaseNavController.swift in Sources */,
 				21D630051C27DDEF002315BB /* NetworkTool.swift in Sources */,

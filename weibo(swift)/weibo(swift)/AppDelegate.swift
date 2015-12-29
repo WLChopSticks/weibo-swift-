@@ -22,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let vc = CHSTabBarController()
 //        
 //        
-////        let welcom = CHSComposeController()
-////        let navVC = CHSNavController(rootViewController: welcom)
+//        let welcom = CHSComposeController()
+//        let navVC = CHSNavController(rootViewController: welcom)
+//        let picture = CHSUploadPictureController()
 //        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
         
